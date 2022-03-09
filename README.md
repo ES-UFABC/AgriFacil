@@ -1,4 +1,4 @@
-# Grupo 2.2 - Agricultura Familiar
+# Grupo 16 - Agricultura Familiar
 
 1. André Ricca Yoshida
 1. Ângelo Maeda Rojas
