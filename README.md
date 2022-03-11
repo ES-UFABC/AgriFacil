@@ -27,10 +27,10 @@ A ideia do projeto partiu do professor da disciplina de Engenharia de Software d
 # Definições de Tecnologias
 ## Front-End
 <<<Pegar as descrições/informações detalhadas com o André>>>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40" />
 ## Back-end
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="40" height="40" />
 <<<Pegar as descrições/informações detalhadas com o André>>>
 ## Banco de Dados
 <<<Pegar as informações detalhadas com o Ângelo>>>
