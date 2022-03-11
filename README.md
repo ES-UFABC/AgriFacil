@@ -26,3 +26,7 @@
 # Instruções para Instalação e Utilização do Sistema
 
 ## Pré-Requisistos
+
+## Baixando e Rodando a Aplicação
+
+# Licença
