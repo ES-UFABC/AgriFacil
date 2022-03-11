@@ -16,8 +16,9 @@ A ideia do projeto partiu do professor da disciplina de Engenharia de Software d
 
 # Principais Funcionalidades
 ## Produtor:
-1. Realizar anúncio de produtos na aplicação;
-1. Ambiente para verificar a existência de pedidos para os produtos anunciados.
+1. Realizar cadastro de produtor;
+2. Realizar anúncio de produtos na aplicação;
+3. Ambiente para verificar a existência de pedidos para os produtos anunciados.
 
 ## Consumidor: 
 1. Consultar o portifólio de produtos e dados de contato dos produtores sem a necessidade de realizar cadastro;
