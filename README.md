@@ -1,4 +1,5 @@
-# Grupo 16 - Agricultura Familiar
+# Grupo 16 - Agricultura Familiar / Disciplina: Engenharia de Software 2022.1
+## Desenvolvedores
 
 1. André Ricca Yoshida
 1. Ângelo Maeda Rojas
@@ -21,5 +22,7 @@
 # Releases
 
 # Documentação API
+
+# Instruções para Instalação e Utilização do Sistema
 
 ## Pré-Requisistos
