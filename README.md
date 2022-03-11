@@ -6,3 +6,20 @@
 1. Gustavo Rodrigues dos Santos
 1. Kevin Willy Antunes de Freitas
 1. Rodrigo da Silva Cassimiro
+
+# Sobre o Projeto
+
+# Motivação
+
+# Principais Funcionalidades
+
+# Definições de Tecnologias
+## Front-End
+## Back-end
+## Disign
+
+# Releases
+
+# Documentação API
+
+## Pré-Requisistos
