@@ -26,9 +26,12 @@ A ideia do projeto partiu do professor da disciplina de Engenharia de Software d
 
 # Definições de Tecnologias
 ## Front-End
-<<<Pegar as informações detalhadas com o André>>>
+<<<Pegar as descrições/informações detalhadas com o André>>>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
 ## Back-end
-<<<Pegar as informações detalhadas com o André>>>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+<<<Pegar as descrições/informações detalhadas com o André>>>
 ## Banco de Dados
 <<<Pegar as informações detalhadas com o Ângelo>>>
 ## Disign
