@@ -26,8 +26,7 @@ A ideia do projeto partiu do professor da disciplina de Engenharia de Software d
 
 # Definições de Tecnologias
 ## Front-End
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80" height="80" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80" height="80" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80" height="80" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80" height="80" />
 
 Pegar as descrições/informações detalhadas com o André...
 
@@ -56,3 +55,14 @@ Em desenvolvimento.
 
 # Licença
 <<<Pegar as informações com o Kevin>>>
+
+# Estatísticas
+
+<div>
+<a href="https://github.com/seu-usuário-aqui">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ES-UFABC/AgriFacil&layout=compact&langs_count=7&theme=dracula"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=ES-UFABC/AgriFacil&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+</div>
+
+
+
