@@ -54,7 +54,7 @@ Em desenvolvimento.
 Em desenvolvimento.
 
 # Licença
-<<<Pegar as informações com o Kevin>>>
+AgriFacil utilizada a licença permissiva MIT.
 
 # Estatísticas
 
