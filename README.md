@@ -1,5 +1,5 @@
 # Grupo 16 - Agricultura Familiar / Disciplina: Engenharia de Software 2022.1
-![Badge em Desenvolvimento](https://img.shields.io/github/license/ES-UFABC/AgriFacil)
+![Badge Licence](https://img.shields.io/github/license/ES-UFABC/AgriFacil)
 ## Desenvolvedores
 
 1. André Ricca Yoshida
