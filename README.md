@@ -68,4 +68,5 @@ AgriFacil utilizada a licença permissiva MIT.
 
 [![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=AgriFacil&layout=compact)](https://github.com/ES-UFABC/AgriFacil/blob/main/README.md)
 
+[![AgriFacil GitHub stats](https://github-readme-stats.vercel.app/api?username=AgriFacil)](https://github.com/AgriFacil/github-readme-stats)
 
