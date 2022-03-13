@@ -31,12 +31,13 @@ A ideia do projeto partiu do professor da disciplina de Engenharia de Software d
 ## Front-End
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80" height="80" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80" height="80" />
 
-Pegar as descrições/informações detalhadas com o André...
+Decidimos desenvolver o front-end utilizando templates HTML, CSS, Bootstrap e jinja2 para comunicação com o back-end.
 
 ## Back-end
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80" height="80" />
 
-Pegar as descrições/informações detalhadas com o André...
+O Principal FrameWork que vamos utilizar é o Flask para criação e definição de Rotas que fornecerão e trocarão os dados necessários com o front.
+Deicidmos escolher o Flask pois é indicado para aplicações web simples e leves e que possui vários módulos e bibliotecas que se encaixam bem na estratégia de desenvolvimento do grupo.
 
 ## Banco de Dados
 Pegar as descrições/informações detalhadas com o Ângelo...
