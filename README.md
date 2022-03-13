@@ -60,11 +60,10 @@ Em desenvolvimento.
 AgriFacil utilizada a licença permissiva MIT.
 
 # Estatísticas
-[![Issues](https://img.shields.io/github/issues/ES-UFABC/AgriFacil?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/ES-UFABC/AgriFacil?style=for-the-badge)
 
-[![Commits](https://img.shields.io/github/commit-activity/y/ES-UFABC/AgriFacil?style=for-the-badge)
+![Commits](https://img.shields.io/github/commit-activity/y/ES-UFABC/AgriFacil?style=for-the-badge)
 
-[![AgriFacil's GitHub stats](https://github-readme-stats.vercel.app/api?username=ES-UFABC)](https://github.com/ES-UFABC/AgriFacil)
-
+![AgriFacil Status](https://github-readme-stats.vercel.app/api?username=ES-UFABC/AgriFacil&show_icons=true)
 
 
