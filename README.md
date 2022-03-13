@@ -64,6 +64,7 @@ AgriFacil utilizada a licença permissiva MIT.
 
 ![Commits](https://img.shields.io/github/commit-activity/y/ES-UFABC/AgriFacil?style=for-the-badge)
 
+![AgriFacil's GitHub stats](https://github-readme-stats.vercel.app/api?username=AgriFacil)](https://github.com/ES-UFABC/AgriFacil)
 
 
 
