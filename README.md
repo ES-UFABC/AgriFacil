@@ -35,7 +35,7 @@ Decidimos desenvolver o front-end utilizando templates HTML, CSS, Bootstrap e ji
 
 ## Back-end
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80" height="80" />
-
+Será desenvolvido em Python.
 O Principal FrameWork que vamos utilizar é o Flask para criação e definição de Rotas que fornecerão e trocarão os dados necessários com o front.
 Deicidmos escolher o Flask pois é indicado para aplicações web simples e leves e que possui vários módulos e bibliotecas que se encaixam bem na estratégia de desenvolvimento do grupo.
 
