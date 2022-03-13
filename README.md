@@ -1,6 +1,6 @@
 # Grupo 16 - Agricultura Familiar / Disciplina: Engenharia de Software 2022.1
 
-[![GitHub license](https://img.shields.io/github/license/ES-UFABC/AgriFacil?style=for-the-badge)](https://github.com/ES-UFABC/AgriFacil/blob/main/LICENSE)
+![GitHub license](https://img.shields.io/github/license/ES-UFABC/AgriFacil?style=for-the-badge)](https://github.com/ES-UFABC/AgriFacil/blob/main/LICENSE)
 
 ## Desenvolvedores
 
@@ -60,9 +60,9 @@ Em desenvolvimento.
 AgriFacil utilizada a licença permissiva MIT.
 
 # Estatísticas
-https://img.shields.io/github/issues/ES-UFABC/AgriFacil?style=for-the-badge
+![Issues](https://img.shields.io/github/issues/ES-UFABC/AgriFacil?style=for-the-badge)
 
-https://img.shields.io/github/commit-activity/y/ES-UFABC/AgriFacil?style=for-the-badge
+![Commits](https://img.shields.io/github/commit-activity/y/ES-UFABC/AgriFacil?style=for-the-badge)
 
 
 
