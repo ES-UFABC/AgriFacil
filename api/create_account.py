@@ -7,18 +7,19 @@ app = Blueprint("account_settings", "app")
 def register():
     if request.method == 'POST':
         try:
-            user = request.form['user']
-            password = request.form['password']
-            telefone = request.form['telefone']
-            email = request.form['email']
+            #idConsumidor = criar função para puxar o último idConsumidor
             CPF = request.form['CPF']
-            RG = request.form['RG']
+            nome = request.form['nome']
+            password = request.form['password']
+            email = request.form['email']
+            telefone = request.form['telefone']
             rua = request.form['rua']
             numero = request.form['numero']
             bairro = request.form['bairro']
             cidade = request.form['cidade']
             estado = request.form['estado']
             CEP = request.form['CEP']
+            complemento = request.form['complemento']
         except Exception as e:
             return render_template("register_miss.html")
     return render_template("index.html")
@@ -27,20 +28,23 @@ def register():
 def register_restaurant():
     if request.method == 'POST':
         try:
-            nome_registro = request.form['user']
-            nome_fantasia = request.form['nome']
-            password = request.form['password']
-            telefone = request.form['telefone']        
-            email = request.form['email']
+            #idProdutor = criar função para puxar o último idProdutor
             CNPJ = request.form['CNPJ']
-            categoria = request.form['categoria']
-            funcionamento = request.form['funcionamento']
+            nome_oficial = request.form['nome_oficial']
+            nome_fantasia = request.form['nome_fantasia']
+            password = request.form['password']
+            email = request.form['email']
+            telefone = request.form['telefone']        
             rua = request.form['rua']
             numero = request.form['numero']
             bairro = request.form['bairro']
             cidade = request.form['cidade']
             estado = request.form['estado']
             CEP = request.form['CEP']
+            complemento = request.form['complemento']
+            agroecologico = request.form['agroecologico']
+            organico = request.form['organico']
+            individualColetiva = request.form['individualColetiva']
         except Exception as e:
             return render_template("register_producer_miss.html")
     return render_template("producer_login.html") 
