@@ -44,4 +44,6 @@ def main():
 def logout():
     session.pop('cpf', None)
 
-    return redirect("/", code=302)   
+    return redirect("/", code=302)  
+
+
