@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+    <main role="main">
+    <form autocomplete="off" action = "/register" method = "POST">
+    <div class="container">
+      <div class="row"  align = "left">
+        <div class="col">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          <img border="0" src="/static/images/logo.jpeg" width="300" height="300">
+        </div>
+        <div class="col">
+    <div class="row"  align = "left">
+<p><h3>Bem vindo ao AgriFacil, faça seu cadastro:</h3></p>
+</div>
+<div class="row"  align = "left">
+<div class="col">
+    <br/>
+    <br/>
+    <br/>
+          <h5 style="color: black">Nome:</h5>
+          <p><input type = "text" name = "user" placeholder = "Nome completo"/></p>
+          <h5 style="color: black">Senha:</h5>
+          <p><input type = "password" id= "pass" name = "password" /></p>
+          <h5 style="color: black">Telefone:</h5>
+          <p><input type = "text" name = "telefone" placeholder = "Telefone"/></p>
+          <h5 style="color: black">CPF (somente numeros):</h5>
+          <p><input type = "text" name = "CPF" placeholder = "CPF"/></p>
+          <h5 style="color: black">E-mail:</h5>
+          <p><input type = "text" name = "email" placeholder = "E-mail"/></p>
+        </div>
+        <div class="col">
+            <br/>
+            <br/>
+            <br/>
+            <h4  style="color: black">Endereço:</h4>
+            <p><input type = "text" name = "rua" placeholder = "Rua"/></p>
+            <br/>
+            <p><input type = "text" name = "numero" placeholder="Número" /></p>
+            <br/>
+            <p><input type = "text" name = "bairro" placeholder = "Bairro"/></p>
+            <br/>
+            <p><input type = "text" name = "cidade" placeholder = "Cidade"/></p>
+            <br/>
+            <p><input type = "text" name = "estado" placeholder = "Estado"/></p>
+            <br/>
+            <p><input type = "text" name = "CEP" placeholder = "CEP"/></p>
+            <br/>
+            <p><input type = "text" name = "complemento" placeholder = "Complemento"/></p>
+        </div>
+    </div>
+    <p><input type = "submit" value = "Cadastrar" /></p> 
+        </div>
+      </div>
+    </div> 
+    </form>
+    </main>
+    {% endblock %}

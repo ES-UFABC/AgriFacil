@@ -1,5 +1,6 @@
-from flask import render_template, request, redirect, session, Blueprint
-import uuid
+from flask import render_template, request, Blueprint
+from crud import client 
+from crud import producer 
 
 app = Blueprint("account_settings", "app")
 
@@ -7,9 +8,8 @@ app = Blueprint("account_settings", "app")
 def register():
     if request.method == 'POST':
         try:
-            #idConsumidor = criar função para puxar o último idConsumidor
             CPF = request.form['CPF']
-            nome = request.form['nome']
+            nome = request.form['user']
             password = request.form['password']
             email = request.form['email']
             telefone = request.form['telefone']
@@ -20,15 +20,15 @@ def register():
             estado = request.form['estado']
             CEP = request.form['CEP']
             complemento = request.form['complemento']
+            client.create(CPF, nome, password, email, telefone, rua, numero, bairro, cidade, estado, CEP, complemento)
         except Exception as e:
             return render_template("register_miss.html")
     return render_template("index.html")
 
 @app.route('/register_producer', methods=['GET', 'POST'])
-def register_restaurant():
+def register_producer():
     if request.method == 'POST':
         try:
-            #idProdutor = criar função para puxar o último idProdutor
             CNPJ = request.form['CNPJ']
             nome_oficial = request.form['nome_oficial']
             nome_fantasia = request.form['nome_fantasia']
@@ -45,6 +45,8 @@ def register_restaurant():
             agroecologico = request.form['agroecologico']
             organico = request.form['organico']
             individualColetiva = request.form['individualColetiva']
+            producer.create(CNPJ, nome_oficial, nome_fantasia, password, email, telefone, rua, numero, bairro, cidade, estado,
+                CEP, complemento, agroecologico, organico, individualColetiva)
         except Exception as e:
             return render_template("register_producer_miss.html")
     return render_template("producer_login.html") 
