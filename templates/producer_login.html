@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <main role="main">
-    <form autocomplete="off" action = "/access" method = "POST">
+    <form autocomplete="off" action = "/access_producer" method = "POST">
     <div class="container">
       <div class="row"  align = "left">
         <div class="col">
@@ -16,14 +16,13 @@
             <br/>
             <br/>
             <br/>
+            <h2>Olá produtor,</h2>
+            <h3>Faça seu login:</h3>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-          <h5 style="color:black">CPF (somente números):</h5>
-          <p><input autocomplete="false" type = "text" name = "CPF" /></p>
+          <h5 style="color:black">CNPJ (somente números):</h5>
+          <p><input autocomplete="false" type = "text" name = "CNPJ" placeholder="CNPJ" /></p>
           <h5 style="color:black">Senha:</h5>
-          <p><input autocomplete="false" type = "password" id= "pass" name = "password" /></p>
+          <p><input autocomplete="false" type = "password" id= "pass" name = "password" placeholder="Senha"/></p>
           <br/>
           <p><input type = "submit" value = "Login" name="index"/></p> 
           <br/>
@@ -31,8 +30,7 @@
           <p><input type = "submit" value = "Registrar" name="index"/></p>
         </div>
       </div>
-      <p><input type = "submit" value = "Produtor" name="index"/></p>
     </div> 
   </form>
     </main>
-{% endblock %}
+    {% endblock %}
