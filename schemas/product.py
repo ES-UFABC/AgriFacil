@@ -22,4 +22,4 @@ class Produto(db.Model):
     idProdutor = db.Column('idProdutor', db.Integer, db.ForeignKey('produtor.idProdutor'),unique=False, nullable=False)
 
     def __repr__(self):
-        return f"user('{self.idConsumidor}','{self.CPF}', '{self.nome}', '{self.password}', '{self.email}', '{self.telefone}', '{self.RG}', '{self.rua}', '{self.numero}', '{self.bairro}', '{self.cidade}', '{self.estado}', '{self.CEP}', '{self.complemento}')"
+        return f"user('{self.idProduto}','{self.nomeProduto}', '{self.categoria}', '{self.quantidade}', '{self.preco}', '{self.idProdutor}')"
