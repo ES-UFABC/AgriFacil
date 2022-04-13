@@ -1,2 +1,4 @@
 __pycache__/
 .vscode
+db/client.db
+db/producer.db

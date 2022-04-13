@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+    <main role="main">
+    <script>            
+        function alert_feedback() {
+            alert("Produto cadastrado com sucesso.");
+        }
+    </script>
+    <br/>           
+    <br/>           
+    <br/>
+    <div class="container">
+            <form autocomplete="off" action = "/add-products" method = "POST">
+        <div class="row">
+            <div class="col"></div>
+                <div class="col">
+                        <h5 style="color: black">Nome do produto:</h5>
+                        <p><input type = "text" name = "name" placeholder = "Nome do produto"/></p>
+                        <h5 style="color: black">Descrição</h5>
+                        <p><textarea type = "text" style="width:480px; height:200px; padding: 1px" id= "description" name = "description" placeholder = "Digite as descrições" ></textarea></p>
+                        <h5 style="color: black">Valor:</h5>
+                        <p><input type=number name = "valor" step=0.01 placeholder = "00,00" min=0/></p>
+                        <p><input type = "submit" value = "Cadastrar" onclick="alert_feedback();"/></p> 
+                      </div>
+                <div class="col"></div>
+        </div>  
+    </form>
+    </div> 
+    </main>
+    {% endblock %}
