@@ -2,60 +2,75 @@
 {% block content %}
     <main role="main">
     <form autocomplete="off" action = "/register" method = "POST">
-    <div class="container">
-      <div class="row"  align = "left">
-        <div class="col">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-          <img border="0" src="/static/images/logo.jpeg" width="300" height="300">
+      <div class="container">
+        <div class="row" align ="center">
+          <div class ="col">
+            <img border="0" src="/static/images/logo.jpeg" width="300" height="300">
+          </div>
         </div>
-        <div class="col">
-    <div class="row"  align = "left">
-<p><h3>Bem vindo ao AgriFacil, faça seu cadastro:</h3></p>
-</div>
-<div class="row"  align = "left">
-<div class="col">
-    <br/>
-    <br/>
-    <br/>
-          <h5 style="color: black">Nome:</h5>
-          <p><input type = "text" name = "user" placeholder = "Nome completo"/></p>
-          <h5 style="color: black">Senha:</h5>
-          <p><input type = "password" id= "pass" name = "password" /></p>
-          <h5 style="color: black">Telefone:</h5>
-          <p><input type = "text" name = "telefone" placeholder = "Telefone"/></p>
-          <h5 style="color: black">CPF (somente numeros):</h5>
-          <p><input type = "text" name = "CPF" placeholder = "CPF"/></p>
-          <h5 style="color: black">E-mail:</h5>
-          <p><input type = "text" name = "email" placeholder = "E-mail"/></p>
+        <div class="row" align ="center">
+          <div class ="col">
+            <p><h3>Bem vindo ao AgriFacil, faça seu cadastro:</h3></p>
+          </div>
         </div>
-        <div class="col">
-            <br/>
-            <br/>
-            <br/>
-            <h4  style="color: black">Endereço:</h4>
-            <p><input type = "text" name = "rua" placeholder = "Rua"/></p>
-            <br/>
-            <p><input type = "text" name = "numero" placeholder="Número" /></p>
-            <br/>
-            <p><input type = "text" name = "bairro" placeholder = "Bairro"/></p>
-            <br/>
-            <p><input type = "text" name = "cidade" placeholder = "Cidade"/></p>
-            <br/>
-            <p><input type = "text" name = "estado" placeholder = "Estado"/></p>
-            <br/>
-            <p><input type = "text" name = "CEP" placeholder = "CEP"/></p>
-            <br/>
-            <p><input type = "text" name = "complemento" placeholder = "Complemento"/></p>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="CPF">CPF</label>
+            <input type="text" class="form-control" id="CPF" name="CPF" placeholder="CPF">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="password">Senha:</label>
+            <input type="password" class="form-control" id="pass" name="password">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="user">Nome</label>
+            <input type="text" class="form-control" id="user" name="user" placeholder="Nome">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="telefone">Telefone</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="E-mail">
+          </div>
+          
+  
+          <div class="form-group col-md-12">
+            <h2>Endereço</h2>
+          </div>
+  
+          <div class="form-group col-md-12">
+            <input type="text" class="form-control" id="CEP" name="CEP" placeholder="CEP">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="rua" name="rua" placeholder="Rua">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="numero" name="numero" placeholder="Número">
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
+          </div>
+  
         </div>
-    </div>
-    <p><input type = "submit" value = "Cadastrar" /></p> 
+        
+        </div>
+        <div class="row" align ="center">
+          <div class="col">
+            <button type="submit" class="btn btn-primary" value = "Cadastrar">Entrar</button>
+          </div>  
         </div>
       </div>
-    </div> 
     </form>
     </main>
     {% endblock %}
