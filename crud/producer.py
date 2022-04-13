@@ -15,5 +15,18 @@ def read(CNPJ, password):
         cur = con.cursor()
         login_approve = cur.execute("SELECT * from produtor where CNPJ = (?) and password = (?)",(CNPJ, password))
         return login_approve
+    
+def list_producers():
+    with sql.connect("db/producer.db") as con:
+        cur = con.cursor()
+        cur.execute("SELECT CNPJ, nomeFantasia, organico, email from produtor")
+        return cur.fetchall()
+
+def producer_info(CNPJ):
+    with sql.connect("db/producer.db") as con:
+        cur = con.cursor()
+        cur.execute("SELECT * from produtor where CNPJ = (?)",(CNPJ,))
+        return cur.fetchall()
+
 # update
 # delete
