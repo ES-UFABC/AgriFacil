@@ -15,6 +15,5 @@ app.register_blueprint(account_router)
 app.register_blueprint(products_router)
 app.register_blueprint(producer_router)
 
-
 if __name__ == '__main__':
     app.run(debug = True)

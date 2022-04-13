@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+    <main role="main">
+    <form autocomplete="off" action = "/access" method = "POST">
+    <div class="container">
+      <div class="row"  align = "left">
+        <div class="col">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          <img border="0" src="/static/images/logo.jpeg" width="300" height="300">
+        </div>
+        <div class="col">
+            <br/>
+            <br/>
+            <br/>
+            <h4 style="color:red">Houve um problema com seu login, tente novamente.</h4>
+            <br/>
+          <h5 style="color:black">CPF (somente números):</h5>
+          <p><input autocomplete="false" type = "text" name = "CPF" /></p>
+          <h5 style="color:black">Senha:</h5>
+          <p><input autocomplete="false" type = "password" id= "pass" name = "password" /></p>
+          <br/>
+          <p><input type = "submit" value = "Login" name="index"/></p> 
+          <br/>
+          <br/>
+          <p><input type = "submit" value = "Registrar" name="index"/></p>
+        </div>
+      </div>
+      <p><input type = "submit" value = "Produtor" name="index"/></p>
+    </div> 
+  </form>
+    </main>
+    {% endblock %}

@@ -1,8 +1,14 @@
 import sqlite3 as sql
 
-def create(name, description, value, cnpj):
-    with sql.connect("db/producer.db") as con: 
+def create(name, category, description, value, id_producer):
+    with sql.connect("db/product.db") as con: 
         cur = con.cursor()
-        cur.execute("INSERT into produtos (produto, descricao, valor, CNPJ) VALUES (?, ?, ?, ?)",(name, description, value, cnpj))
+        cur.execute("INSERT into produto (nome, categoria, descricao, preco, idProdutor) VALUES (?, ?, ?, ?, ?)",(name, category, description, value, id_producer))
         con.commit()
         print("Record successfully added")
+
+def get_products_from_producer(id):
+    with sql.connect("db/product.db") as con: 
+        cur = con.cursor()
+        cur.execute("SELECT * from produto where idProdutor = (?)",(id))
+        return cur.fetchall()
