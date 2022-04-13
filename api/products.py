@@ -1,5 +1,5 @@
 from flask import render_template, request, Blueprint, session
-from crud import products
+from crud import products as prdct
 from crud import producer
 
 app = Blueprint("products", "app")
@@ -14,10 +14,11 @@ def products():
     if request.method == 'POST':
         try:
             name = request.form['name']
+            category = request.form['category']
             description = request.form['description']
             value = request.form['valor']
-            print(name, description, value, session['cnpj'])
-            # products.create(name, description, value, session['cnpj'])
+            print(name, category, description, value, session['id'])
+            prdct.create(name, category, description, value, session['id'])
             print("Record successfully added")
         except Exception as e:
             print("bad")
