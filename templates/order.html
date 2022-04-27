@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<main role="main">
+    <div class="container" align="center">
+<br/>
+<br/>
+        <div class="row">
+        <h2 style="color:black">Veja o status do seu pedido</h2>
+        </div>
+<br/>
+<br/>
+    <div class="row" >
+    <table class="table table-hover">
+        <tr>
+            <h6><td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Nome do Produtor:</h6></div></td>
+            <td></td>
+            <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Hora do pedido:</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;" ><div align="center"><h6 style="color:black">Identificação do pedido:</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;" ><div align="center"><h6 style="color:black">Status do pedido:</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;" ><div align="center"><h6 style="color:black">Valor total:</h6></div></td>
+        </tr>
+
+        <tr class="item">
+            <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{order[0][0]}}</h6></div></td>  
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{order[0][1]}}</h6></div></td>  
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{order_number}}</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{order[0][4]}}</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">R$ {{total}}</h6></div></td>        
+        </tr>
+    </table>
+    <br/>
+        </div>
+        <div class="row" style="justify-content: space-between">
+        <input type="button" class ="btn btn-primary border teste2" border="2" style= "background-color: #001637;font-size: 15px;" value="Pagina Anterior" onclick="history.back(-1)" />
+    
+    </div>
+    </div>  
+</main>
+  {% endblock %}
