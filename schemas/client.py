@@ -3,16 +3,19 @@ from flask_sqlalchemy import SQLAlchemy
 import sqlite3 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'db/client.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'db/agrifacil.db'
 db = SQLAlchemy(app)
 
-conn = sqlite3.connect('db/client.db')
+conn = sqlite3.connect('db/agrifacil.db')
 print ("Opened database successfully")
 
-conn.execute('CREATE TABLE consumidor (idConsumidor INTEGER PRIMARY KEY AUTOINCREMENT, CPF TEXT, nome TEXT, password TEXT, email TEXT, telefone TEXT, rua TEXT, numero TEXT, bairro TEXT, cidade TEXT, estado TEXT, CEP TEXT, complemento TEXT)')
-print ("Table created successfully")
-conn.close()
-
+try:
+    conn.execute('CREATE TABLE consumidor (idConsumidor INTEGER PRIMARY KEY AUTOINCREMENT, CPF TEXT, nome TEXT, password TEXT, email TEXT, telefone TEXT, rua TEXT, numero TEXT, bairro TEXT, cidade TEXT, estado TEXT, CEP TEXT, complemento TEXT)')
+    print ("Table created successfully")
+    conn.close()
+except Exception as e:
+    print ("Table already exists")
+    
 class Consumidor(db.Model):
     idConsumidor = db.Column('idConsumidor', db.Integer, primary_key=True, unique=True)
     CPF = db.Column('CPF', db.Integer, unique=True, nullable=False)

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<main role="main">
+<script>            
+    function alert_feedback() {
+        alert("Pedido confirmado, o status foi alterado para aprovado.");
+    }
+</script>
+    <div class="container" align="center">
+<br/>
+<br/>
+<br/>
+        <div class="row">
+        <h2 style="color:black">Você tem pedidos pendentes, confirme para finalizar</h2>
+        </div>
+<br/>
+<br/>
+    <div class="row" >
+    <table class="table table-hover">
+        <tr>
+            <h6><td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Nome do Produtor:</h6></div></td>
+            <td></td>
+            <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Produto:</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Quantidade:</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;" ><div align="center"><h6 style="color:black">Valor total:</h6></div></td>
+        </tr>
+    {% for result in shop_info %}
+        <tr class="item">
+            <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[0]}}</h6></div></td>  
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[1]}}</h6></div></td>  
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[2]}}</h6></div></td>
+            <td></td>
+            <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{(result[2]*result[3])|round(2)}}</h6></div></td>        </tr>
+    {% endfor %}
+    </table>
+    <br/>
+    <form action = "/order" method = "POST">
+    <h2 style="color:black">O valor total do seu pedido é R$ {{total}}</h2>
+        </div>
+        <div class="row" style="justify-content: space-between">
+        <input type="button" class ="btn btn-primary border teste2" border="2" style= "background-color: #001637;font-size: 15px;" value="Pagina Anterior" onclick="history.back(-1)" />
+        <div align="center" ><button type = "submit" class= "searchbutton" onclick="alert_feedback();"><a href="#">
+        <img src="/static/images/car.png" 
+        onmouseover="this.src='/static/images/car2.png'"
+        onmouseout="this.src='/static/images/car.png'"
+        border="0" alt="" width="50px" height="50px"/></a></button><h6 style="color:black">Confirmar</h6></div>
+    </div>
+</form>
+    </div>  
+</main>
+  {% endblock %}
