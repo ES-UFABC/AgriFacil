@@ -11,4 +11,6 @@ def order_history():
 @app.route('/sell-history', methods=['GET', 'POST'])
 def sell_history():
     sell_history = order.get_sell_history(session['id'])
+    for item in sell_history:
+        print(item)
     return render_template("sell_history.html", sell_history = sell_history)
