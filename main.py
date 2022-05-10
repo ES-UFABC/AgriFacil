@@ -1,4 +1,5 @@
 import os
+import core.settings as st
 from flask import Flask
 from api.login import app as login_router
 from api.create_account import app as account_router
@@ -18,4 +19,4 @@ app.register_blueprint(producer_router)
 app.register_blueprint(shop_car_router)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = True, port = st.PORT)
