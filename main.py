@@ -1,4 +1,5 @@
 import os
+import core.settings as st
 from flask import Flask
 from api.login import app as login_router
 from api.create_account import app as account_router
