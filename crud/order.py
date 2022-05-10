@@ -29,11 +29,11 @@ def get_order_status(order_id):
 def get_order_history(cpf):
     with sql.connect("db/agrifacil.db") as con: 
         cur = con.cursor()
-        cur.execute("SELECT p.idPedido, p.valor, pr.nomeFantasia, p.horario FROM pedido p join produtor pr on (p.idProdutor = pr.idProdutor) join produto pt on (p.idProduto = pt.idProdutor) where p.cpf = (?) and p.status_pedido = 'Confirmado' group by idPedido",(cpf,))
+        cur.execute("SELECT p.idPedido, p.valor, pr.nomeFantasia, p.horario FROM pedido p join produtor pr on (p.idProdutor = pr.idProdutor) join produto pt on (p.idProduto = pt.idProdutor) where p.cpf = (?) and p.status_pedido = 'Confirmado' group by uuid",(cpf,))
         return cur.fetchall() 
 
 def get_sell_history(id):
     with sql.connect("db/agrifacil.db") as con: 
         cur = con.cursor()
-        cur.execute("SELECT p.idPedido, p.valor, c.nome, c.email, c.telefone, p.horario FROM pedido p join produtor pr on (p.idProdutor = pr.idProdutor) join consumidor c on (p.CPF = c.CPF) where p.idProdutor = (?) and p.status_pedido = 'Confirmado' group by idPedido",(id,))
+        cur.execute("SELECT p.idPedido, p.valor, c.nome, c.email, c.telefone, p.horario FROM pedido p join produtor pr on (p.idProdutor = pr.idProdutor) join consumidor c on (p.CPF = c.CPF) where p.idProdutor = (?) and p.status_pedido = 'Confirmado' group by uuid",(id,))
         return cur.fetchall() 
