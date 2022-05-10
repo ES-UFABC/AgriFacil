@@ -34,12 +34,12 @@ def shop_car():
     except Exception as e:
         print(e)
 
-@app.route('/order', methods=['GET', 'POST'])
-def order():
+@app.route('/order/<total>', methods=['GET', 'POST'])
+def order(total):
     order_number = session['uuid']
     today = datetime.datetime.today().replace(second=0, microsecond=0)
     try:
-        order_crud.update(order_number, today)
+        order_crud.update(order_number, today, total)
     except Exception as e:
         print(e)
     return ('', 204) 

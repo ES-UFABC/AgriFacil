@@ -22,13 +22,3 @@ def products():
         except Exception as e:
             print("bad")
     return render_template("products_set.html")
-
-@app.route('/get-products', methods=['GET', 'POST'])
-def get_products_list():
-    
-    return "Lista de produtos de um produtor" #ToDo
-
-@app.route('/update-products', methods=['PUT'])
-def update_products():
-    
-    return "Podutor pode atualizar informação de um produto" #ToDo
