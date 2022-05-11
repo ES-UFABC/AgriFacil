@@ -1,49 +1,51 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "baseConsumidor.html" %}
+{% block consumidor %}
     <main role="main">
     <div class="container" align="center">
         <div class="row" >
             <div class="col">
-<br/>
-<br/>
-<br/>
-<a style ="color:black; margin-right: 0; margin-left: auto; display: flex; "href="/order-history">Histórico de pedidos</a>
-<br/>
+                
+                <br/>
                 <h4 style="color:black">O que deseja encomendar?</h4>
             </div>
             <div class="col"></div>
             <br/>
-           <br/>
-              </div>
-            </div> 
-                <table class="table table-hover">
-                <tr>
-                  <h6><td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Nome do Produtor:</h6><input id="inputtype" type = "text" name = "nome" placeholder="Nome do Produtor" /></div></td>
-                  <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Orgânico:</h6><input id="inputtype" type = "text" name = "organico" placeholder="Orgânico" /></div></td>
-                  <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Email:</h6></div></td>
-                  <td width="10%" style="vertical-align:middle;" ><div align="center"><button type = "submit" class= "searchbutton"><a href="#">
-                      <img src="static/images/icon.png" 
-                      onmouseover="this.src='static/images/icon2.png'"
-                      onmouseout="this.src='static/images/icon.png'"
-                      border="0" alt="" width="50px" height="50px"/></a></button></div>
-                  </td>
-                </tr>
-              {% for result in info %}
-              <tr class="item">
-                  <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[1]}}</h6></div></td>  
-                  <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[2]}}</h6></div></td>  
-                  <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[3]}}</h6></div></td>
-                  <form method="post" action="/producer/{{ result[0] }}">
-                  <td width="5%" style="vertical-align:middle;"><div align="center"><button type = "submit" class= "searchbutton"><a href="#">
-                      <img src="static/images/fork.png" 
-                      onmouseover="this.src='static/images/fork2.png'"
-                      onmouseout="this.src='static/images/fork.png'"
-                      border="0" alt="" width="50px" height="50px"/></a></button></div></div></td>
-                  </form>
-              </tr>
-              {% endfor %}
-                </table>
-      </div>
+            <br/>
+        </div>
+    </div> 
+
+    <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Nome do Produtor:</h6><input id="inputtype" type = "text" name = "nome" placeholder="Nome do Produtor" /></div></th>
+            <th scope="col" width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Orgânico:</h6><input id="inputtype" type = "text" name = "organico" placeholder="Orgânico" /></div></th>
+            <th scope="col" width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">Email:</h6></div></th>
+            <th scope="col" width="10%" style="vertical-align:middle;" ><div align="center"><button type = "submit" class= "searchbutton"><a href="#">
+                <img src="static/images/icon.png" 
+                onmouseover="this.src='static/images/icon2.png'"
+                onmouseout="this.src='static/images/icon.png'"
+                border="0" alt="" width="50px" height="50px"/></a></button></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for result in info %}
+            <tr>
+                <td width="20%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[1]}}</h6></div></td>  
+                <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[2]}}</h6></div></td>  
+                <td width="10%" style="vertical-align:middle;"><div align="center"><h6 style="color:black">{{result[3]}}</h6></div></td>
+                <form method="post" action="/producer/{{ result[0] }}">
+                <td width="5%" style="vertical-align:middle;"><div align="center"><button type = "submit" class= "searchbutton"><a href="#">
+                    <img src="static/images/fork.png" 
+                    onmouseover="this.src='static/images/fork2.png'"
+                    onmouseout="this.src='static/images/fork.png'"
+                    border="0" alt="" width="50px" height="50px"/></a></button></div></div></td>
+                </form>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
     </div>  
-    </main>
+</main>
   {% endblock %}

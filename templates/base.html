@@ -22,19 +22,28 @@
       {% endif %}
     </head>
     <body style="background-color:#ccc">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between" style="background-color:#358525">
-        <a class="navbar-brand" href="/">
-                <img src="/static/images/logo.jpeg" alt="AgriFacil" height="40px" />
-            </a>
-            <ul class="navbar-nav mr-auto">
-                <li>
-        <a class="navbar-brand" href="/">AgriFacil</a>
-            </ul>
+
+    <div class="row">
+        <div class ="col-12" style= "min-height: 50px">
+
+
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between" style="background-color:#358525">
+                <a class="navbar-brand" href="/">
+                    <img src="/static/images/logo.jpeg" alt="AgriFacil" height="40px" />
+                </a>
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                    <a class="navbar-brand" href="/">AgriFacil</a>
+                </ul>
                 &nbsp;&nbsp;<a style ="color:black; "href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;<a style ="color:black; "href="/shop_car">Carrinho</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;<a style ="color:black; "href="/order_status">Pedidos</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;<a style = "color:black;" href="/logout">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    </nav>
-        <hr>{% block content %}{% endblock %}</hr>
+            </nav>
+        </div>
+        <div class ="col-12">
+            <hr>{% block content %}{% endblock %}</hr>
+        </div>
+    </div>    
     </body>
 </html>

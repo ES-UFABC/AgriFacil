@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<main role="main">
+<div class="row">
+
+    <div class="col-3">
+        <div class="list-group">
+            <a style ="color:black; background-color: #e9ecef"; href="/order-history" class="list-group-item list-group-item-action"">Histórico de pedidos</a>
+            <a style ="color:black; background-color: #e9ecef"; href="/shop_car" class="list-group-item list-group-item-action">Carrinho</a>
+            <a style ="color:black; background-color: #e9ecef"; href="/order_status" class="list-group-item list-group-item-action">Pedidos</a>
+        </div>
+    </div>
+    <div class="col-9">
+        <hr>{% block consumidor %}{% endblock %}</hr>
+    </div>
+
+</div>
+
+</main>
+  {% endblock %}
