@@ -45,6 +45,8 @@ Pegar as descrições/informações detalhadas com o Ângelo...
 Em desenvolvimento.
 
 # Releases
+![Release](https://img.shields.io/github/v/release/ES-UFABC/AgriFacil?style=for-the-badge)
+
 Em desenvolvimento.
 
 # Documentação API
