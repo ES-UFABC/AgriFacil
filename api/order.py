@@ -6,6 +6,7 @@ app = Blueprint("order", "app")
 @app.route('/order-history', methods=['GET', 'POST'])
 def order_history():
     order_history = order.get_order_history(session['cpf'])
+    print(order_history)
     return render_template("order_history.html", order_history = order_history)
 
 @app.route('/sell-history', methods=['GET', 'POST'])
