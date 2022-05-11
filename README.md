@@ -59,12 +59,12 @@ Indicamos que o desenvolvedor tenha instalado em sua máquina:
 
 ## Baixando e Rodando a Aplicação
 O projeto aqui desenvolvido pode ser facilmente baixado e executado seguindo as instruções abaixo:
-  1. Indicamos que o desenvolvedor, dentro do VSC, baixe o projeto através da função clone disponível no GitHub;
+  1. Indicamos que o desenvolvedor, dentro do VSC, clone o projeto, através do endereço disponível neste GitHub;
   1. Após realizar o clone, certifique-se que o projeto local está atualizado (git pull);
-  1. Ainda no VSC, dentro do terminal, caso não esteja, caminha até o path do projeto, local onde o mesmo foi salvo;
+  1. Ainda no VSC, dentro do terminal, caso não esteja no path do projeto, caminhe até o local onde o mesmo foi salvo;
   1. Deve ser executada a aplicação em python, através do seguinte comando: "python main.py";
   1. Com o projeto sendo executado, vá até o seu navegador e acesse a página do projeto: "http://localhost:5000/";
-  1. pronto, agora você já pode aproveitar as funcionalidades do Projeto AgriFacil.
+  1. Pronto, agora você já pode aproveitar as funcionalidades do Projeto AgriFacil.
  
 # Licença
 AgriFacil utilizada a licença permissiva MIT.
