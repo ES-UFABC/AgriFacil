@@ -22,5 +22,4 @@ app.register_blueprint(shop_car_router)
 app.register_blueprint(order_router)
 
 if __name__ == '__main__':
-    #app.run(debug = True)
     app.run(debug = True, port = st.PORT)
