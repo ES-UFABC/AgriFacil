@@ -40,8 +40,10 @@ O Principal FrameWork que vamos utilizar é o Flask para criação e definição
 Deicidmos escolher o Flask pois é indicado para aplicações web simples e leves e que possui vários módulos e bibliotecas que se encaixam bem na estratégia de desenvolvimento do grupo.
 
 ## Banco de Dados
-Pegar as descrições/informações detalhadas com o Ângelo...
-## Disign
+Neste projeto utilizamos de banco de dados relacional para o funcionamento do sistema e ser possível ter de forma
+fácil e segura as informações dos produtores e dos pedidos dos consumidores.
+
+## Design
 Em desenvolvimento.
 
 # Releases
