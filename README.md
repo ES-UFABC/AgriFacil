@@ -56,8 +56,9 @@ Em desenvolvimento.
 ## Pré-Requisistos
 Indicamos que o desenvolvedor tenha instalado em sua máquina:
   1. Python - 3.9.x ou superior;
-  1. Visual Studio Code - 1.66.x ou superior;
-  2. Navegador de internet atualizado.
+  2. Instalação do python-dotenv
+  3. Visual Studio Code - 1.66.x ou superior;
+  4. Navegador de internet atualizado.
 
 ## Baixando e Rodando a Aplicação
 O projeto aqui desenvolvido pode ser facilmente baixado e executado seguindo as instruções abaixo:
