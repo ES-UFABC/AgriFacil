@@ -54,7 +54,7 @@ Em desenvolvimento.
 
 # Instruções para Instalação e Utilização do Sistema
 ## Pré-Requisistos
-Indicamos que o desenvolvedor tenha instalado em sua máquina:
+É necessário que o desenvolvedor tenha instalado em sua máquina:
   1. Python - 3.9.x ou superior;
   2. Instalação do python-dotenv
   3. Visual Studio Code - 1.66.x ou superior;
